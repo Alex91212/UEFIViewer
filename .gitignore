@@ -1,0 +1,18 @@
+# Build files
+build/
+*.pro.user
+*.autosave
+
+# Executables
+*.exe
+*.app
+*.dll
+*.so
+*.a
+
+# Qt Creator
+CMakeLists.txt.user*
+
+# Temp files
+*.o
+*.moc

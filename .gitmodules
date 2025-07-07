@@ -1,0 +1,3 @@
+[submodule "lib/qhexedit2"]
+	path = lib/qhexedit2
+	url = https://github.com/Simsys/qhexedit2.git

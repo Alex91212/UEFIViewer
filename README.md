@@ -11,7 +11,7 @@
 
 2. Клонируйте с подмодулями:
 ```bash
-git clone --recursive https://github.com/ваш-логин/UEFIViewer.git
+git clone --recursive https://github.com/Alex91212/UEFIViewer.git
 cd UEFIViewer
 ```
 2,5. Соберите проект UEFITool для своей OS из исходников:

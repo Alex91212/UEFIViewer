@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.16)
 project(UEFIViewer VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
 set(CMAKE_CXX_STANDARD 17)
 
 # Специальные флаги для Qt6 и GCC 15
@@ -38,6 +39,9 @@ add_executable(UEFIViewer
     main.cpp
     mainwindow.cpp
     mainwindow.h
+    signrequest.h
+    signrequest.cpp
+    signrequest.ui
 )
 
 target_link_libraries(UEFIViewer PRIVATE
@@ -47,7 +51,7 @@ target_link_libraries(UEFIViewer PRIVATE
 )
 
 # Специальные флаги линковки для Qt6
-if (UNIX AND NOT APPLE)
+if (UNIX)
     target_link_options(UEFIViewer PRIVATE
         -Wl,--copy-dt-needed-entries
         -no-pie
